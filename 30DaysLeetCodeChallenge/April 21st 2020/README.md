@@ -45,3 +45,9 @@ n == mat[i].length
 1 <= m, n <= 100
 mat[i][j] is either 0 or 1.
 mat[i] is sorted in a non-decreasing way.
+
+#### Show Hint #1
+1. (Binary Search) For each row do a binary search to find the leftmost one on that row and update the answer.
+
+#### Show Hint #2
+2. (Optimal Approach) Imagine there is a pointer p(x, y) starting from top right corner. p can only move left or down. If the value at p is 0, move down. If the value at p is 1, move left. Try to figure out the correctness and time complexity of this algorithm.
