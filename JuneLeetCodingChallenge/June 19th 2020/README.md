@@ -18,3 +18,9 @@ Return any duplicated substring that has the longest possible length.  (If S doe
 
 2 <= S.length <= 10^5
 S consists of lowercase English letters.
+
+#### Show Hint #1
+Binary search for the length of the answer. (If there's an answer of length 10, then there are answers of length 9, 8, 7, ...)
+
+#### Ahow Hint #2
+To check whether an answer of length K exists, we can use Rabin-Karp 's algorithm.
