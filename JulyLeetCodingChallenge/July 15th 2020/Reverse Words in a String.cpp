@@ -1,0 +1,12 @@
+class Solution {
+public:
+    string reverseWords(string s) {
+        istringstream is(s);
+         string tmp;
+         is >> s;
+         cout <<s<<endl;
+         while(is >> tmp) s = tmp + " " + s;
+            if(s[0] == ' ') s = "";
+         return s;
+    }
+};
